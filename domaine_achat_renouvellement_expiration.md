@@ -12,7 +12,7 @@ Concrètement il suffit d'aller sur leur page de commande, et de choisir le doma
 
 Exemple d'interface de commande chez [1&1](https://www.1and1.fr) :
 
-![Proposition d’extensions sur l'interface de 1and1.fr](commande_domaine_choix_tld.png)
+![Proposition d’extensions sur l'interface de 1and1.fr](images/domaine_commande_choix_tld.png)
 
 On peut voir que l'interface nous informe que le domaine est bien disponible, nous informe du prix avec réduction et plein tarif et nous invite à commander le même domaine mais avec d'autres extensions.
 
@@ -36,7 +36,7 @@ En effet, pour les extensions classiques le coût sera de l'ordre de 15€ ou mo
 
 Continuez le processus de commande chez 1&1 et vous arriverez à cet écran :
 
-![Choix de la période d'enregistrement](commande_domaine_periode_enregistrement.png)
+![Choix de la période d'enregistrement](images/domaine_commande_periode_enregistrement.png)
 
 Ici la chose important à regarder est la durée d'engagement, ou dans ce cas, la période d'enregistrement du domaine. C'est la période initiale durant laquelle vous allez posséder le domaine, avant de le laisser expirer ou au contraire de le renouveler.
 
