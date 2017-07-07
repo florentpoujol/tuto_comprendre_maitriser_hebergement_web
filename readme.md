@@ -13,9 +13,9 @@ J'ai en même temps commencé à le publier sur [OpenClassrooms.com](https://ope
 	- [Anatomie et gestion administrative](domaine_anatomie_gestion_administrative.md)
 	- [Achat, renouvellement, expiration](domaine_achat_renouvellement_expiration.md)
 	- [Transferts](domaine_transferts.md)
-	- Gestion technique: les paramètres DNS
+	- [Gestion technique : les paramètres DNS](domaine_parametres_dns.md)
 - Les adresses email
-	- Utilisation des adresses email
+	- [Utilisation des adresses email](email_utilisation.md)
 	- Utilisation avancées, SPF, DKIM, bounces
 	- Résolution des problèmes
 - Les hébergements web
