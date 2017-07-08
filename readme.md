@@ -8,18 +8,18 @@ J'ai en même temps commencé à le publier sur [OpenClassrooms.com](https://ope
 
 ## Plan :
 
-- [Introduction du cours](introduction.md)
-- [Les noms de domaine](domaine_introduction.md)
-	- [Anatomie et gestion administrative](domaine_anatomie_gestion_administrative.md)
-	- [Achat, renouvellement, expiration](domaine_achat_renouvellement_expiration.md)
-	- [Transferts](domaine_transferts.md)
-	- [Gestion technique : les paramètres DNS](domaine_parametres_dns.md)
+- [Introduction du cours](0_introduction.md)
+- [Les noms de domaine](1-1_domaine_introduction.md)
+	- [Anatomie et gestion administrative](1-2_domaine_anatomie_gestion_administrative.md)
+	- [Achat, renouvellement, expiration](1-3_domaine_achat_renouvellement_expiration.md)
+	- [Transferts](1-4_domaine_transferts.md)
+	- [Gestion technique : les paramètres DNS](1-5_domaine_parametres_dns.md)
 - Les adresses email
-	- [Utilisation des adresses email](email_utilisation.md)
-	- [Utilisation avancées, SPF, DKIM, bounces](email_utilisations_avancees.md)
-	- [Résolution des problèmes](email_resolution_problemes.md)
+	- [Utilisation des adresses email](2-1_email_utilisation.md)
+	- [Utilisation avancées, SPF, DKIM, bounces](2-2_email_utilisations_avancees.md)
+	- [Résolution des problèmes](2-3_email_resolution_problemes.md)
 - Les hébergements web
-	- Les différents types d'hébergement web
+	- [Les différents types d'hébergement web](3-1_differents_type_hebergement_web.md)
 	- L'hébergement mutualisé en détail
 - Votre compte client
 	- Généralités sur votre compte client
