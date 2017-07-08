@@ -16,8 +16,8 @@ J'ai en même temps commencé à le publier sur [OpenClassrooms.com](https://ope
 	- [Gestion technique : les paramètres DNS](domaine_parametres_dns.md)
 - Les adresses email
 	- [Utilisation des adresses email](email_utilisation.md)
-	- Utilisation avancées, SPF, DKIM, bounces
-	- Résolution des problèmes
+	- [Utilisation avancées, SPF, DKIM, bounces](email_utilisations_avancees.md)
+	- [Résolution des problèmes](email_resolution_problemes.md)
 - Les hébergements web
 	- Les différents types d'hébergement web
 	- L'hébergement mutualisé en détail

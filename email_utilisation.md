@@ -148,11 +148,11 @@ Lorsque vous supprimez un email sur votre ordinateur, il est déplacé vers la c
 
 ## La synchronisation d'une boite dans un logiciel de messagerie
 
-Quelque soit le logiciel de messagerie, ce sont les même informations qui seront demandées pour y synchroniser une boite email. L'interface change évidement par contre beaucoup entre chaque logiciels.
+Quelque soit le logiciel de messagerie, ce sont les même informations qui seront demandées pour y synchroniser une boite email. Par contre, l'interface change évidement beaucoup entre chaque logiciels.
 
 Dans tous les cas, le logiciel commence par demander le nom d'expéditeur, c'est à dire le nom associé à l'adresse que verra le destinataire, ainsi que l'adresse email, et son mot de passe.
 
- Avec les boites basiques, il faut ensuite choisir le protocole de réception entre POP et IMAP. Il n'est pas possible de le changer une fois choisit, mais vous pourrez toujours supprimer la boite du logiciel pour la reconfigurer depuis le début avec un autre protocole par la suite.
+Avec les boites basiques, il faut ensuite choisir le protocole de réception entre POP et IMAP. Il n'est pas possible de le changer une fois choisit, mais vous pourrez toujours supprimer la boite du logiciel pour la reconfigurer depuis le début avec un autre protocole par la suite.
 
 Ensuite, pour la réception comme pour l'envoi, il faut configurer les  paramètres suivants :
 
@@ -160,22 +160,22 @@ Ensuite, pour la réception comme pour l'envoi, il faut configurer les  paramèt
 
 Le logiciel doit se connecter à un serveur de réception pour récupérer les emails reçus dans la boite  ainsi qu'à un serveur d'envoi afin de transmettre les emails à envoyer.
 
-Par défaut, le logiciel remplira sans doute les champs avec quelque chose du genre imap.entreprise.com et smtp.entreprise.com.
+Par défaut, le logiciel remplira sans doute les champs avec quelque chose du genre _imap.votredomaine.com_ et _smtp.votredomaine.com_.
 
-Le serveur de réception ne sera la plupart du temps pas vraiment imap.entreprise.com mais ça peut marcher si le sous-domaine imap existe bien dans la zone du domaine et fait un raccourci (un enregistrement CNAME) vers le vrai nom du serveur, comme c'est le cas chez OVH et Gandi par exemple.
+Le serveur de réception ne sera la plupart du temps pas vraiment imap.votredomaine.com mais ça peut marcher si le sous-domaine _imap_ existe bien dans la zone DNS du domaine et fait un raccourci (un enregistrement CNAME) vers le vrai nom du serveur, comme c'est le cas chez OVH et Gandi par exemple.
 
 Dans tous les cas, mettez ce que votre hébergeur indique dans leurs tutoriels. Par exemple :
 
-- ssl0.ovh.net pour IMAP, POP et SMTP chez OVH.
-- imap.1and1.fr, pop.1and1.fr et auth.smtp.1and1.fr chez 1&1.
+- _ssl0.ovh.net_ pour IMAP, POP et SMTP chez OVH.
+- _imap.1and1.fr_, _pop.1and1.fr_ et _auth.smtp.1and1.fr_ chez 1&1.
 
 ### Ports et sécurité SSL/TLS
 
-Pour IMAP c'est toujours le port 143 sans sécurité  ou de préférence le port 993 avec sécurité SSL/TLS.
+Pour IMAP c'est toujours le port _143 sans sécurité_  ou de préférence le port __993 avec sécurité SSL/TLS__.
 
-Pour POP c'est toujours le port 110 sans sécurité ou de préférence le port 995 avec sécurité SSL/TLS.
+Pour POP c'est toujours le port _110 sans sécurité_ ou de préférence le port __995 avec sécurité SSL/TLS__.
 
-Pour SMTP c'est le port 587 sans sécurité ou de préférence le port 465 avec sécurité SSL/TLS.
+Pour SMTP c'est le port _587 sans sécurité_ ou de préférence le port __465 avec sécurité SSL/TLS__.
 
 > Le port 25 est généralement réservé pour le serveur d'envoi de votre FAI.
 
@@ -183,15 +183,15 @@ Dans certains cas, le logiciel choisira tout seul.
 
 > Pourquoi "de préférence" les ports avec la sécurité SSL/TLS ?
 
-Parce que c'est mieux ! Les détails techniques ne sont pas importants pour ce cours, mais de la même manière qu'il est mieux qu'un site web ai une adresse qui commence par https, il est mieux de se connecter à aux serveurs d'email avec la sécurité SSL/TLS. Si votre hébergeur ou votre logiciels venaient à ne pas supporter l'utilisation de cette sécurité, changez-en !
+Parce que c'est mieux ! Les détails techniques ne sont pas importants pour ce cours, mais de la même manière qu'il est mieux qu'un site web ai une adresse qui commence par _https_, il est mieux de se connecter à aux serveurs d'email avec la sécurité SSL/TLS. Si votre hébergeur ou votre logiciels venaient à ne pas supporter l'utilisation de cette sécurité, changez-en !
 
 ### Authentification
 
 Pour éviter que n'importe qui ne puisse récupérer vos emails, le logiciels doit s'authentifier auprès du serveur de réception, exactement de la même manière que vous le faites lorsque vous vous connectez à un webmail.
 
-L'identifiant est donc soit l'adresse email au complet, soit juste ce qu'il y a devant le arobase (@). Le mot de passe est le même que celui de l'adresse.
+L'identifiant est donc typiquement soit __l'adresse email au complet__, soit juste __ce qu'il y a devant le arobase__ (@). Le mot de passe est typiquement le même que celui de l'adresse.
 
-Le serveur d'envoi n'a pas forcément besoin d'authentification, mais ça devient très rare, car ça veut dire que n'importe qui peut l'utiliser pour envoyer des emails, et le risque qu'il soit utilisé pour envoyer du spam et donc se fasse blacklisté un peu partout est grand. La majorité du temps, il y a donc besoin d'authentification auprès du serveur d'envoi également. L'identifiant et le mot de passe sont les même que pour la réception.
+Le serveur d'envoi n'a pas forcément besoin d'authentification, mais ça devient très rare, car ça veut dire que n'importe qui peut l'utiliser pour envoyer des emails, et le risque qu'il soit utilisé pour envoyer du spam et donc se fasse blacklisté un peu partout est grand. La majorité du temps, il y a donc besoin d'authentification auprès du serveur d'envoi également. L'identifiant et le mot de passe sont quasiment toujours les même que pour la réception.
 
 ### Exchange
 
@@ -201,23 +201,23 @@ Avec les boites Exchange, c'est généralement plus simple puisque le seul param
 
 ### Poids d'un email
 
-Les emails ne sont pas fait pour se partager des fichiers. C'est bien sur pratique de pouvoir s'envoyer des pièces jointe mais chez tous les prestataires il y a une limite au poids total d'un email tant lors de l'envoi que lors de la réception.
+__Les emails ne sont pas fait pour se partager des fichiers__. C'est bien sur pratique de pouvoir s'envoyer des pièces jointe mais chez tous les prestataires il y a une limite au poids total d'un email tant lors de l'envoi que lors de la réception.
 
-Chez 1&1 et OVH vous pouvez envoyer des emails pesant en tout jusqu'à 100 Mo via un client de messagerie. Notez bien que l'email va mettre du temps à partir, suivant la vitesse à laquelle votre connexion internet vous permet d'uploader des fichiers.
+Chez 1&1 et OVH vous pouvez envoyer des emails pesant en tout jusqu'à 100 Mo via un client de messagerie. Notez bien que l'email va mettre du temps à partir, suivant la vitesse à laquelle votre connexion Internet vous permet d'uploader des fichiers.
 
-Mais la plupart des prestataires limitent de toute façon la taille totale d'un email reçut à bien mois, souvent seulement 10 Mo ou à peine plus.
+Mais la plupart des prestataires limitent de toute façon la taille totale d'un email reçut à bien mois, souvent __seulement 10 Mo ou à peine plus__.
 
-D'une manière générale, si vos pièces jointes font au total plus de 10 Mo, pensez déjà à les zipper pour réduire leur poid et surtout à utiliser autre chose qu'un email pour les partager, par exemple WeTransfer ou Dropbox. Ce n'est alors que le lien de téléchargement que vous envoyez par email.
+D'une manière générale, si vos pièces jointes font au total plus de 10 Mo, pensez déjà à les zipper pour réduire leur poid et surtout à utiliser autre chose qu'un email pour les partager, par exemple [WeTransfer](https://wetransfer.com) ou Dropbox. Ce n'est alors que le lien de téléchargement que vous envoyez par email.
 
 ### Limites d'envoi
 
-> Les boites emails qu'une manière générale, même les Exchange, même celles dites professionnelles, ne sont en aucun cas faites pour envoyer des emails en grand nombre sur une courte période de temps.
+> Les boites emails qu'une manière générale, même les Exchange, même celles dites professionnelles, __ne sont en aucun cas faites pour envoyer des emails en grand nombre__ sur une courte période de temps.
 
-Pour éviter de se faire employer par des spammeurs, les hébergeur imposent toujours des limitations sur le nombre d'emails qui peuvent être envoyés par boite, par IP, par heure, etc...
+Pour éviter de se faire employer par des spammeurs, les hébergeurs imposent toujours des limitations sur le nombre d'emails qui peuvent être envoyés par boite, par IP, par heure, etc...
 
-Concrètement chez OVH par exemple, la limite est de 200 à 300 destinataires par heure. Avec les boites Exchange, c'est souvent bien moins, de l'ordre de quelques centaines par jour, ce qui est de toute façon bien suffisant pour une utilisation de tous les jours.
+Concrètement chez OVH par exemple, la limite est de 200 à 300 destinataires par heure. Avec les boites Exchange, c'est souvent bien moins, de l'ordre de quelques centaines par jour, __ce qui est de toute façon bien suffisant pour une utilisation de tous les jours__.
 
-Si vous envoyez au dessus de ces quotas, vos emails vont s'empiler dans une file d'attente que le système les envoi en respectant les limites ou alors être complètement rejetés. Vous n'avez donc rien d'autre à faire que de réduire le volume d'email que vous envoyez et prendre votre mal en patience.
+Si vous envoyez au dessus de ces quotas, vos emails vont s'empiler dans une file d'attente le temps que le système les envoi en respectant les limites ou alors être complètement rejetés. Vous n'avez donc rien d'autre à faire que de réduire le volume d'email que vous envoyez et prendre votre mal en patience.
 
 > Comment dois-je faire alors pour envoyer des emails en masse ?
 
@@ -225,15 +225,14 @@ Vous devez utiliser un service spécialisé, qui utilise un serveur d'envoi sans
 
 Si votre hébergeur n'en propose pas, vous pouvez vous tourner vers d'autres fournisseurs, tels que Mailjet ou Mailchimp, par exemple.
 
-> Même en utilisant ces services qui n'ont rien à voir avec votre hébergeur, vous pourrez envoyer ces emails avec une adresse liée à votre domaine.
+> Même en utilisant ces services qui n'ont rien à voir avec votre hébergeur, vous pourrez envoyer ces emails avec une adresse liée à votre domaine. Mais attention, il faudra alors potentiellment mettre à jour votre enregistrement SPF.
 
-## En résumé
+### En résumé
 
-- Une boite email peut recevoir et envoyer des emails alors qu'une redirection ne fait que renvoyer les emails reçus vers d'autres adresses.
-- Une boite peut être de type basique, ne gérant que les emails, ou bien de type Exchange permettant de gérer et partager les emails, les contacts, les calendriers, et les tâches entre plusieurs appareils connectés à la même boite ou entre plusieurs boites du même type.
-- Un webmail est un site web qui permet de gérer une boite email via un navigateur web.
-- Un logiciel de messagerie est lui installé sur l'ordinateur (ou l'appareil mobile) et permet de gérer une boite généralement de manière plus pratique qu'un webmail et sans devoir forcément disposer tout le temps d'Internet.
-- Le protocole IMAP fait une synchronisation des emails du serveur vers l'appareil et vice versa. Il est généralement adapté lorsque vous voulez avoir plusieurs appareil connectés à la même boite.
-- Le protocole POP ne va que récupérer les emails sur le serveur et éventuellement les supprimer tout de suite ou plus tard.
-- N'utilisez jamais vos adresses pour envoyer plus de quelques centaines d'email par jours, à moins d'utiliser un service approprié.
-‌
+- Une __boite__ email peut recevoir et envoyer des emails alors qu'une __redirection__ ne fait que renvoyer les emails reçus vers d'autres adresses.
+- Une boite peut être de type __basique__, ne gérant que les emails, ou bien de type __Exchange__ permettant de gérer et partager les emails, les contacts, les calendriers, et les tâches entre plusieurs appareils connectés à la même boite ou entre plusieurs boites du même type.
+- Un __webmail__ est un site web qui permet de gérer une boite email via un navigateur web.
+- Un __logiciel de messagerie__ est lui installé sur l'ordinateur (ou l'appareil mobile) et permet de gérer une boite généralement de manière __plus pratique__ qu'un webmail et sans devoir forcément disposer tout le temps d'Internet.
+- Le protocole __IMAP__ fait une synchronisation des emails du serveur vers l'appareil et vice versa. Il est généralement adapté lorsque vous voulez avoir __plusieurs appareils connectés à la même boite__.
+- Le protocole __POP__ ne va que récupérer les emails sur le serveur et éventuellement les supprimer tout de suite ou plus tard.
+- N'utilisez __jamais__ vos adresses pour envoyer plus de quelques centaines d'email par jours, à moins d'utiliser un service approprié.
