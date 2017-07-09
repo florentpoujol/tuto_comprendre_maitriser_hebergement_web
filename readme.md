@@ -19,8 +19,9 @@ J'ai en même temps commencé à le publier sur [OpenClassrooms.com](https://ope
 	- [Utilisation avancées, SPF, DKIM, bounces](2-2_email_utilisations_avancees.md)
 	- [Résolution des problèmes](2-3_email_resolution_problemes.md)
 - Les hébergements web
-	- [Les différents types d'hébergement web](3-1_differents_type_hebergement_web.md)
-	- L'hébergement mutualisé en détail
+	- [Les différents types d'hébergement web](3-1_differents_types_hebergement_web.md)
+	- [De quoi est fait un site web](3-2_de_quoi_est_fait_un_site_web.md)
+	- [L'hébergement mutualisé en détail](3-3_hebergement_mutualise_en_details.md)
 - Votre compte client
 	- Généralités sur votre compte client
 	- Les Conditions Générales de Vente
