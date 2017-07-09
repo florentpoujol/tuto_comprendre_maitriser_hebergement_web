@@ -23,5 +23,5 @@ J'ai en même temps commencé à le publier sur [OpenClassrooms.com](https://ope
 	- [De quoi est fait un site web](3-2_de_quoi_est_fait_un_site_web.md)
 	- [L'hébergement mutualisé en détail](3-3_hebergement_mutualise_en_details.md)
 - Votre compte client
-	- Généralités sur votre compte client
+	- [Généralités sur votre compte client](4-1_generalites_compte_client.md)
 	- Les Conditions Générales de Vente
