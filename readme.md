@@ -24,4 +24,4 @@ J'ai en même temps commencé à le publier sur [OpenClassrooms.com](https://ope
 	- [L'hébergement mutualisé en détail](3-3_hebergement_mutualise_en_details.md)
 - Votre compte client
 	- [Généralités sur votre compte client](4-1_generalites_compte_client.md)
-	- Les Conditions Générales de Vente
+	- [Les Conditions Générales de Vente](4-2_conditions_generales_de_vente.md)
