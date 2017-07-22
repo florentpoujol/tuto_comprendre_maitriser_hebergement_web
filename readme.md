@@ -1,4 +1,4 @@
-# Comprendre et maîtriser son hébergement
+# Comprendre et maîtriser son hébergement web
 
 Ce cours a pour objectif de vous donner une meilleur compréhension du fonctionnement d'un hébergement web et de tout ce qui y est lié : les noms de domaine, les adresses email, les hébergements web à proprement parler ainsi que votre compte client.
 
